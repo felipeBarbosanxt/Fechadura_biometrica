@@ -51,3 +51,23 @@ Comunicação via MQTT ou integração direta por ESPHome (a definir).
 
 ## 🧱 Estrutura Física
 A estrutura foi inteiramente modelada no Fusion e projetada para encaixe sob medida dos componentes. A modelagem visa facilitar a impressão 3D e o acesso a portas e interfaces externas.
+
+---
+
+## 👨‍💻 Autores
+
+- **Emyli Kelri Pereira**  
+  - LinkedIn: [Emyli Kelri Pereira](https://www.linkedin.com/in/emyli-kelri-pereira-94210b2bb/)
+
+- **Felipe Barbosa dos Santos**  
+  - GitHub: [@felipeBarbosanxt](https://github.com/felipeBarbosanxt)  
+  - LinkedIn: [Felipe Barbosa dos Santos](https://www.linkedin.com/in/felipe-barbosa-bbsnxt/)
+
+- **Felipe de Castro Alves**  
+  - LinkedIn: [Felipe de Castro Alves](https://www.linkedin.com/in/felipe-de-castro-alves-328983245/)
+
+- **Leticia Gasques de Santana**  
+  - LinkedIn: [Leticia Gasques de Santana](https://www.linkedin.com/in/leticia-gasques-de-santana-9220bb2a5/)
+
+- **Thallita Cardoso Tavares**  
+  - LinkedIn: [Thallita Cardoso Tavares](https://www.linkedin.com/in/thallita-cardoso-tavares-188455326/)
