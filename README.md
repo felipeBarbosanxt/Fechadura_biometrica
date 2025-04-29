@@ -2,20 +2,6 @@
 
 Este projeto consiste no desenvolvimento de uma fechadura eletrônica biométrica baseada em ESP32, com autenticação via impressão digital, integração com o Home Assistant e estrutura física projetada em modelagem 3D.
 
-## 📑 Sumário
-
-- [Descrição](#descrição)
-- [Funcionalidades](#funcionalidades)
-- [Componentes Utilizados](#componentes-utilizados)
-- [Instalação e Uso](#instalação-e-uso)
-- [Integração com Home Assistant](#integração-com-home-assistant)
-- [Tecnologias](#tecnologias)
-- [Estrutura Física](#estrutura-física)
-- [Licença](#licença)
-- [Autor](#autor)
-
----
-
 ## 📋 Descrição
 
 Este projeto visa aumentar a segurança e automação de ambientes através de uma fechadura biométrica integrada a sistemas de automação residencial. Utilizando autenticação por impressão digital, o sistema aciona uma solenoide para abrir ou trancar portas, exibindo informações em tempo real em um display LCD, com controle adicional via Home Assistant.
@@ -44,6 +30,8 @@ Este projeto visa aumentar a segurança e automação de ambientes através de u
 - **Relé:** Módulo de 1 canal
 - **Outros:** Fonte 12V, jumpers, protoboard ou placa de circuito impresso
 
+---
+
 ## 🏠 Integração com Home Assistant
 Comunicação via MQTT ou integração direta por ESPHome (a definir).
 
@@ -51,13 +39,15 @@ Comunicação via MQTT ou integração direta por ESPHome (a definir).
 
 ---
 
-## 🛠 Tecnologias
+##  🛠 Tecnologias
 
 - **Firmware:** Arduino IDE (C++)
 - **Microcontrolador:** ESP32-WROOM-32
 - **Automação Residencial:** Home Assistant
 - **Modelagem 3D:** Fusion (Autodesk)
 - **Versionamento:** Git / GitHub
+
+---
 
 ## 🧱 Estrutura Física
 A estrutura foi inteiramente modelada no Fusion e projetada para encaixe sob medida dos componentes. A modelagem visa facilitar a impressão 3D e o acesso a portas e interfaces externas.
