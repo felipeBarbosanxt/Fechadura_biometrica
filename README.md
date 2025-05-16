@@ -4,7 +4,7 @@ Este projeto consiste no desenvolvimento de uma fechadura eletrônica biométric
 
 ## 📋 Descrição
 
-Este projeto visa aumentar a segurança e automação de ambientes através de uma fechadura biométrica. Utilizando autenticação por impressão digital ou senha via teclado, o sistema aciona uma solenoide para abrir ou trancar portas, exibindo informações em tempo real em um display LCD e visualização de dados extraídos da utilização do dispositivo via Home Assistant.
+Este projeto visa aumentar a segurança e automação de ambientes através de uma fechadura biométrica. Utilizando autenticação por impressão digital ou senha via teclado, o sistema aciona uma solenoide para abrir ou trancar portas, exibindo informações em tempo real em um display e visualização de dados extraídos da utilização do dispositivo via Home Assistant.
 
 ---
 
