@@ -16,7 +16,7 @@ Este projeto visa aumentar a segurança e automação de ambientes através de u
 - Entrada de comandos via teclado matricial 4x4
 - Comunicação com Home Assistant para monitoramento e controle remoto
 - Registro e exclusão de impressões digitais
-- Feedback visual via LCD e sonoro (opcional)
+- Feedback visual via display e sonoro (opcional)
 
 ---
 
@@ -25,7 +25,7 @@ Este projeto visa aumentar a segurança e automação de ambientes através de u
 - **Microcontrolador:** ESP32-WROOM-32
 - **Sensor Biométrico:** SM15 UART
 - **Atuador:** Mini Solenoide 12V
-- **Display:** LCD 16x2 com I2C
+- **Display:** Em estudo
 - **Entrada de dados:** Teclado Matricial 4x4
 - **Relé:** Módulo de 1 canal
 - **Outros:** Fonte 12V, jumpers, protoboard ou placa de circuito impresso
