@@ -69,5 +69,6 @@ A estrutura foi inteiramente modelada no Fusion e projetada para encaixe sob med
 - **Leticia Gasques de Santana**  
   - LinkedIn: [Leticia Gasques de Santana](https://www.linkedin.com/in/leticia-gasques-de-santana-9220bb2a5/)
 
-- **Thallita Cardoso Tavares**  
+- **Thallita Cardoso Tavares**
+  - GitHub: [@Tali-Cardoso](https://github.com/Tali-Cardoso) 
   - LinkedIn: [Thallita Cardoso Tavares](https://www.linkedin.com/in/thallita-cardoso-tavares-188455326/)
