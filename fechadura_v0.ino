@@ -28,7 +28,7 @@ char keys[ROWS][COLS] = {
   {'*','0','#','D'}
 };
 
-// GPIOs do ESP
+// ===== GPIOs DO ESP =====
 byte rowPins[ROWS] = {23, 22, 21, 19}; // Linhas: L1-L4
 byte colPins[COLS] = {18, 5, 17, 16};  // Colunas: C1-C4
 
@@ -65,14 +65,15 @@ void initPinSolenoide()
   pinMode(PIN_SOLENOIDE, OUTPUT);
 }
 
-// Função de abrir e fechar solenoide
-void trancarPorta() {
+// Fechar solenoide (porta trancada)
+void openSolenoide() {
   digitalWrite(PIN_SOLENOIDE, HIGH);  // energiza a solenoide = tranca
   portaTrancada = true;
   Serial.println("Porta trancada.");
 }
 
-void destrancarPorta() {
+// Abrir solenoide (porta aberta)
+void closeSolenoide() {
   digitalWrite(PIN_SOLENOIDE, LOW);   // desenergiza = destranca
   portaTrancada = false;
   Serial.println("Porta destrancada.");
@@ -85,6 +86,14 @@ void keypadProcess() {
   if (key) {
     Serial.print("Tecla pressionada: ");
     Serial.println(key);
+
+    // if(key == 'A'){
+    //   initRegister();
+    //   return;
+    // }
+    // if(key == 'C'){
+    //   initRecognition();
+    // }
 
     // A letra B inicia o processo de TRANCAR a porta (caso ela esteja destrancada)
     if (key == 'B') {
@@ -126,7 +135,6 @@ void keypadProcess() {
   }
 }
 
-
 // ===== SETUP E LOOP =====
 
 void setup() 
@@ -134,7 +142,7 @@ void setup()
   Serial.begin(115200);
   // initWifi();
   initPinSolenoide();
-  trancarPorta();  // Estado inicial
+  openSolenoide();  // Estado inicial
 
 }
 
