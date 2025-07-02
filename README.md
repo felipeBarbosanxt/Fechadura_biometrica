@@ -1,29 +1,28 @@
 # 🔐 Fechadura Biométrica Inteligente Integrada ao Home Assistant
 
-Este projeto consiste no desenvolvimento de uma fechadura eletrônica biométrica baseada em ESP32, com autenticação via impressão digital, integração com o Home Assistant e estrutura física projetada em modelagem 3D.
+Este projeto consiste no desenvolvimento de uma fechadura eletrônica biométrica baseada em ESP32, com autenticação via impressão RFID, senha via teclado matricial, integração com o Home Assistant e estrutura física projetada em modelagem 3D.
 
 ## 📋 Descrição
 
-Este projeto visa aumentar a segurança e automação de ambientes através de uma fechadura biométrica. Utilizando autenticação por impressão digital ou senha via teclado, o sistema aciona uma solenoide para abrir ou trancar portas, exibindo informações em tempo real em um display e visualização de dados extraídos da utilização do dispositivo via Home Assistant.
+Este projeto visa aumentar a segurança e automação de ambientes através de uma fechadura  eletrônica. Utilizando autenticação por RFID ou senha via teclado, o sistema aciona uma solenoide para abrir ou trancar portas, exibindo informações em tempo real em um display e visualização de dados extraídos da utilização do dispositivo via Home Assistant.
 
 ---
 
 ## ✅ Funcionalidades
 
-- Autenticação de usuários via sensor biométrico SM15
+- Autenticação de usuários via RFID MFRC522
 - Acionamento de solenoide para travamento/destravamento
-- Exibição de status em Display LCD
+- Exibição de status em Display I2c
 - Entrada de comandos via teclado matricial 4x4
 - Comunicação com Home Assistant para monitoramento e controle remoto
-- Registro e exclusão de impressões digitais
-- Feedback visual via display e sonoro (opcional)
+- Feedback visual via display
 
 ---
 
 ## 🔧 Componentes Utilizados
 
 - **Microcontrolador:** ESP32-WROOM-32
-- **Sensor Biométrico:** SM15 UART
+- **RFID:** MFRC522 SPI
 - **Atuador:** Mini Solenoide 12V
 - **Display:** Em estudo
 - **Entrada de dados:** Teclado Matricial 4x4
@@ -33,7 +32,7 @@ Este projeto visa aumentar a segurança e automação de ambientes através de u
 ---
 
 ## 🏠 Integração com Home Assistant
-Comunicação via MQTT ou integração direta por ESPHome (a definir).
+Comunicação via MQTT ou integração direta por Home Assistant
 
 - Gatilhos para automações com base em eventos de autenticação.
 
