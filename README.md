@@ -1,73 +1,76 @@
-# 🔐 Fechadura Biométrica Inteligente Integrada ao Home Assistant
+# 🔐 Fechadura Eletrônica com Autenticação por RFID, Senha e Integração com Home Assistant
 
-Este projeto consiste no desenvolvimento de uma fechadura eletrônica biométrica baseada em ESP32, com autenticação via impressão digital, integração com o Home Assistant e estrutura física projetada em modelagem 3D.
+Este projeto consiste no desenvolvimento de uma fechadura eletrônica baseada em ESP32, com autenticação via RFID, senha através de teclado matricial, integração com o Home Assistant e estrutura física projetada em modelagem 3D para impressão.
+
+---
 
 ## 📋 Descrição
 
-Este projeto visa aumentar a segurança e automação de ambientes através de uma fechadura biométrica. Utilizando autenticação por impressão digital ou senha via teclado, o sistema aciona uma solenoide para abrir ou trancar portas, exibindo informações em tempo real em um display e visualização de dados extraídos da utilização do dispositivo via Home Assistant.
+Este projeto tem como objetivo promover segurança e automação residencial através de uma fechadura eletrônica multifator. O sistema permite o destravamento da porta mediante autenticação via cartão RFID ou senha numérica, utilizando um teclado matricial. A comunicação com o Home Assistant viabiliza o monitoramento remoto, registro de eventos e automações personalizadas. O sistema também exibe feedback em tempo real por meio de um display conectado ao ESP32.
 
 ---
 
 ## ✅ Funcionalidades
 
-- Autenticação de usuários via sensor biométrico SM15
-- Acionamento de solenoide para travamento/destravamento
-- Exibição de status em Display LCD
-- Entrada de comandos via teclado matricial 4x4
-- Comunicação com Home Assistant para monitoramento e controle remoto
-- Registro e exclusão de impressões digitais
-- Feedback visual via display e sonoro (opcional)
+- Autenticação de usuários via RFID (MFRC522)
+- Entrada alternativa por senha utilizando teclado matricial 4x4
+- Acionamento de solenoide para trancar ou destrancar portas
+- Exibição de mensagens de status em Display I2C
+- Comunicação com o Home Assistant via MQTT
+- Registro e visualização de eventos no painel do Home Assistant
 
 ---
 
 ## 🔧 Componentes Utilizados
 
 - **Microcontrolador:** ESP32-WROOM-32
-- **Sensor Biométrico:** SM15 UART
+- **RFID:** Leitor MFRC522 (SPI)
+- **Teclado:** Matricial 4x4
 - **Atuador:** Mini Solenoide 12V
-- **Display:** Em estudo
-- **Entrada de dados:** Teclado Matricial 4x4
+- **Display:** (Em definição, com comunicação I2C)
 - **Relé:** Módulo de 1 canal
-- **Outros:** Fonte 12V, jumpers, protoboard ou placa de circuito impresso
+- **Alimentação:** Fonte 12V
+- **Outros:** Protoboard, jumpers, parafusos, conectores
 
 ---
 
 ## 🏠 Integração com Home Assistant
-Comunicação via MQTT ou integração direta por ESPHome (a definir).
 
-- Gatilhos para automações com base em eventos de autenticação.
+- Integração via **MQTT** com tópicos personalizados para envio de logs e status
+- Gatilhos para **automações** (por exemplo, acionar câmeras ou enviar notificações)
+- Monitoramento do estado da fechadura diretamente na interface do Home Assistant
 
 ---
 
-##  🛠 Tecnologias
+## 🛠 Tecnologias
 
-- **Firmware:** Arduino IDE (C++)
+- **Firmware:** Desenvolvido com Arduino IDE (linguagem C++)
 - **Microcontrolador:** ESP32-WROOM-32
 - **Automação Residencial:** Home Assistant
-- **Modelagem 3D:** Fusion (Autodesk)
-- **Versionamento:** Git / GitHub
+- **Modelagem 3D:** Fusion 360 (Autodesk)
+- **Versionamento:** Git + GitHub
 
 ---
 
 ## 🧱 Estrutura Física
-A estrutura foi inteiramente modelada no Fusion e projetada para encaixe sob medida dos componentes. A modelagem visa facilitar a impressão 3D e o acesso a portas e interfaces externas.
+
+A estrutura da fechadura foi projetada em **Fusion 360** com foco em encaixes precisos para os componentes eletrônicos. O modelo visa facilitar a impressão 3D e garantir um design compacto, funcional e esteticamente agradável.
 
 ---
 
 ## 👨‍💻 Autores
 
 - **Emyli Kelri Pereira**  
-  - LinkedIn: [Emyli Kelri Pereira](https://www.linkedin.com/in/emyli-kelri-pereira-94210b2bb/)
+  [LinkedIn](https://www.linkedin.com/in/emyli-kelri-pereira-94210b2bb/)
 
 - **Felipe Barbosa dos Santos**  
-  - GitHub: [@felipeBarbosanxt](https://github.com/felipeBarbosanxt)  
-  - LinkedIn: [Felipe Barbosa dos Santos](https://www.linkedin.com/in/felipe-barbosa-bbsnxt/)
+  [GitHub](https://github.com/felipeBarbosanxt) • [LinkedIn](https://www.linkedin.com/in/felipe-barbosa-bbsnxt/)
 
 - **Felipe de Castro Alves**  
-  - LinkedIn: [Felipe de Castro Alves](https://www.linkedin.com/in/felipe-de-castro-alves-328983245/)
+  [LinkedIn](https://www.linkedin.com/in/felipe-de-castro-alves-328983245/)
 
 - **Leticia Gasques de Santana**  
-  - LinkedIn: [Leticia Gasques de Santana](https://www.linkedin.com/in/leticia-gasques-de-santana-9220bb2a5/)
+  [LinkedIn](https://www.linkedin.com/in/leticia-gasques-de-santana-9220bb2a5/)
 
 - **Thallita Cardoso Tavares**  
-  - LinkedIn: [Thallita Cardoso Tavares](https://www.linkedin.com/in/thallita-cardoso-tavares-188455326/)
+  [GitHub](https://github.com/Tali-Cardoso) • [LinkedIn](https://www.linkedin.com/in/thallita-cardoso-tavares-188455326/)
